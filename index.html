@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maafkan Aku Diana ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#ff2d6f,#ff6fa7,#ffb3d9);
+  color:white;
+  overflow-x:hidden;
+}
+
+/* Floating Hearts */
+.heart{
+  position:fixed;
+  color:rgba(255,255,255,0.7);
+  font-size:20px;
+  animation:float 6s linear infinite;
+  z-index:1;
+}
+@keyframes float{
+  0%{transform:translateY(100vh) scale(0); opacity:1;}
+  100%{transform:translateY(-10vh) scale(1.5); opacity:0;}
+}
+
+/* Section */
+section{
+  padding:60px 8%;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+/* Hero */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:rgba(0,0,0,0.4);
+  padding:20px;
+}
+
+.hero h1{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(50px,8vw,90px);
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:clamp(16px,2.5vw,22px);
+  max-width:800px;
+}
+
+/* Glass Card */
+.card{
+  background:rgba(0,0,0,0.35);
+  backdrop-filter:blur(12px);
+  padding:30px;
+  border-radius:25px;
+  box-shadow:0 0 30px rgba(255,0,100,0.7);
+  max-width:950px;
+  margin:auto;
+}
+
+/* Timeline */
+.timeline{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+.time-box{
+  background:rgba(255,255,255,0.15);
+  padding:15px;
+  border-radius:15px;
+  font-size:14px;
+  box-shadow:0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Button */
+button{
+  padding:12px 30px;
+  border:none;
+  border-radius:50px;
+  background:#ff004c;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  box-shadow:0 0 15px #ff004c;
+  transition:0.3s;
+}
+button:hover{
+  background:white;
+  color:#ff004c;
+  transform:scale(1.05);
+}
+
+#response{
+  font-size:22px;
+  margin-top:15px;
+  font-weight:bold;
+  color:#ffe3ec;
+}
+
+/* Music Button */
+.music-btn{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  padding:10px 18px;
+  border:none;
+  border-radius:50px;
+  background:#ff004c;
+  color:white;
+  font-size:14px;
+  box-shadow:0 0 10px pink;
+  cursor:pointer;
+  z-index:9999;
+}
+
+/* Footer */
+footer{
+  padding:20px;
+  background:black;
+  text-align:center;
+  font-size:12px;
+}
+
+/* Responsive Extra */
+@media(max-width:768px){
+  section{padding:40px 5%;}
+  .card{padding:20px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="bgm" loop>
+  <source src="lagu-diana.mp3" type="audio/mp3">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵 Musik</button>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Diana Sayang ❤️</h1>
+  <p id="typing"></p>
+</section>
+
+<!-- KENANGAN -->
+<section>
+  <div class="card">
+    <h2>Kenangan Kita 💞</h2>
+    <div class="timeline">
+      <div class="time-box">Saat pertama kali aku jatuh cinta sama senyummu.</div>
+      <div class="time-box">Saat kamu bikin aku merasa paling bahagia di dunia.</div>
+      <div class="time-box">Saat kita tertawa tanpa alasan sampai lupa waktu.</div>
+      <div class="time-box">Saat aku sadar kamu adalah wanita yang ingin aku nikahi.</div>
+      <div class="time-box">Saat kita saling cerita sampai larut malam.</div>
+      <div class="time-box">Saat kamu bilang kamu nyaman sama aku.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PERASAAN -->
+<section>
+  <div class="card">
+    <h2>Perasaanku Untukmu 💖</h2>
+    <p>Diana, kamu bukan hanya pacarku, kamu adalah rumahku, tempat aku merasa tenang.</p>
+    <p>Kamu adalah cahaya di saat aku gelap, senyum di saat aku lelah, dan peluk di saat aku rapuh.</p>
+    <p>Aku mencintaimu bukan hanya karena kamu cantik, tapi karena hatimu yang lembut dan tulus.</p>
+    <p>Setiap hari aku bersyukur Tuhan mempertemukan aku dengan kamu.</p>
+  </div>
+</section>
+
+<!-- PERMINTAAN MAAF -->
+<section>
+  <div class="card">
+    <h2>Permintaan Maafku 😔</h2>
+    <p>Diana sayang, aku minta maaf atas semua kesalahan yang pernah aku buat.</p>
+    <p>Maaf kalau aku egois, keras kepala, atau membuat kamu merasa tidak dicintai.</p>
+    <p>Aku tahu kata maaf tidak cukup, tapi hatiku benar-benar menyesal.</p>
+    <p>Aku takut kehilangan kamu, karena hidupku tanpa kamu terasa kosong.</p>
+    <h3>Kamu adalah wanita paling berharga dalam hidupku.</h3>
+  </div>
+</section>
+
+<!-- JANJI -->
+<section>
+  <div class="card">
+    <h2>Janji Untuk Diana 💍</h2>
+    <p>Aku janji akan lebih sabar dan dewasa menghadapi semua masalah.</p>
+    <p>Aku janji akan menjaga hatimu, perasaanmu, dan kepercayaanmu.</p>
+    <p>Aku janji tidak akan menyia-nyiakan cinta yang kamu kasih ke aku.</p>
+    <p>Aku janji akan menjadi suami yang baik, setia, dan bertanggung jawab.</p>
+    <p>Aku janji mencintaimu sampai tua, sampai rambut kita beruban bersama.</p>
+  </div>
+</section>
+
+<!-- PERTANYAAN -->
+<section>
+  <div class="card">
+    <h2>Diana, Mau Maafkan Aku? 🥺</h2>
+    <p>Aku tidak ingin kehilangan kamu.</p>
+    <p>Kamu adalah masa depanku, istriku, dan cintaku selamanya.</p>
+    <button onclick="yesClick()">YA, AKU MAAFKAN KAMU ❤️</button>
+    <div id="response"></div>
+  </div>
+</section>
+
+<footer>
+  Website cinta ini dibuat khusus untuk Diana Cantik oleh seseorang yang sangat mencintainya ❤️
+</footer>
+
+<script>
+// Typing Effect
+const text = "Untuk istriku tercinta, Diana... kamu adalah doa yang menjadi nyata, cinta yang aku jaga, dan masa depan yang aku pilih setiap hari. Aku mencintaimu lebih dari apapun di dunia ini.";
+let i=0;
+function typingEffect(){
+  if(i<text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typingEffect,60);
+  }
+}
+typingEffect();
+
+// Hearts
+function createHeart(){
+  const heart=document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML="❤️";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.fontSize=(Math.random()*25+10)+"px";
+  heart.style.animationDuration=(Math.random()*3+3)+"s";
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),6000);
+}
+setInterval(createHeart,200);
+
+// Music Control
+const bgm=document.getElementById("bgm");
+let playing=false;
+
+function toggleMusic(){
+  if(playing){
+    bgm.pause();
+    playing=false;
+  }else{
+    bgm.play();
+    playing=true;
+  }
+}
+
+// Autoplay after click
+document.body.addEventListener("click",()=>{
+  if(!playing){
+    bgm.play();
+    playing=true;
+  }
+});
+
+// Button Response
+function yesClick(){
+  document.getElementById("response").innerHTML =
+  "Terima kasih sayang 😭❤️ Aku janji akan mencintaimu, menjaga kamu, dan tidak akan mengecewakanmu lagi seumur hidupku. Kamu adalah istriku, cintaku, dan segalanya bagiku.";
+}
+</script>
+
+</body>
+</html>
